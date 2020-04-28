@@ -4,7 +4,7 @@
     $secdomainpasswd = ConvertTo-SecureString "u3n07SK0%anU" -AsPlainText -Force
     $mydomaincreds = New-Object System.Management.Automation.PSCredential("adjoin@hq.standardoptical.net", $secdomainpasswd)
         
-    node $AllNodes.NodeName   
+    node 'localhost'
     {
         xDSCDomainjoin JoinDomain
         {
