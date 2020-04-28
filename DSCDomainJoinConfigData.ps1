@@ -6,8 +6,5 @@ $ConfigData = @{
             PSDscAllowDomainUser = $true
            
         }
-        @{
-            NodeName = "DomainJoined"
-        }
     )
 }
